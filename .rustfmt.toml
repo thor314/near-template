@@ -1,0 +1,3 @@
+tab_spaces = 2
+hard_tabs = false # default, but explicit spaces not tabs
+merge_imports = true

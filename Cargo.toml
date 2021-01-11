@@ -1,0 +1,23 @@
+[package]
+name = "dummy"
+version = "0.1.0"
+authors = ["Thor Kamphefner <thor@mintbase.io"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"] # because wasm
+
+[dependencies]
+near-sdk = { git = "https://github.com/near/near-sdk-rs.git", tag="2.4.0" }
+
+[dev-dependencies]
+near-sdk-sim = { git = "https://github.com/near/near-sdk-rs.git", tag="2.4.0" }
+
+[profile.release]
+codegen-units = 1
+# Tell `rustc` to optimize for small code size.
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+overflow-checks = true
