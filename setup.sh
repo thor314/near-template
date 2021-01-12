@@ -12,3 +12,4 @@ sed -i "s/Dummy/$target/g" tests/general.rs
 
 mv README.md instructions.md
 echo "# $1" >> README.md
+git remote remove origin

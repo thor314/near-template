@@ -25,8 +25,8 @@ will change the script to:
 
 `near deploy --wasmFile res/dummy.wasm --initFunction "new" --initArgs '{"name": "Todd", "number": 1}' --accountId $1.testnet`
 
-and call `./deploy MYADDRESS`, or to provide arguments, change `deploy.sh` to:
+and call `./deploy.sh MYADDRESS`, or to provide arguments, change `deploy.sh` to:
 
 `near deploy --wasmFile res/dummy.wasm --initFunction "new" --initArgs "{\"name\": $1, \"number\": $2}" --accountId $1.testnet`
 
-and call `./deploy MYADDRESS MYNAME MYNUM`.
+and call `./deploy.sh MYADDRESS MYNAME MYNUM`.
