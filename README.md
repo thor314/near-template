@@ -1,5 +1,7 @@
 # Template for a NEAR project
 
+If you're looking for a `no-std` version of this template, go [here](https://github.com/thor314/near-no-std-template).
+
 Contains:
 - a setup script
 - Cargo.toml setup with simulation testing and NEAR sdk crates
